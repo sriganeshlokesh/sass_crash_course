@@ -18,3 +18,25 @@ $secondary-color: #ff8700;
   background-color: $color;
   color: set-text-color($color);
 }
+
+// space amounts
+$space-amounts: (1, 2, 3, 4, 5);
+
+@each $space in $space-amounts {
+  .m-#{$space} {
+    margin: #{$space} rem;
+  }
+  .my-#{$space} {
+    margin: #{$space} rem 0;
+  }
+  .mx-#{$space} {
+    margin: 0 #{$space} rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space} rem;
+  }
+  .py-#{$space} {
+    padding: #{$space} rem 0;
+  }
+}
